@@ -1,0 +1,27 @@
+
+
+body {
+  background-color: salmon;
+  font-family: impact;
+}
+ .counter {
+   display: none;
+ }
+
+ .full-entry {
+   display: none;
+ }
+
+  #first-eight:hover {
+   color: purple;
+ }
+ .col {
+   border: 4px solid black;
+ }
+
+.card{
+  background-color: salmon;
+  color: black;
+  font-family: roboto;
+  padding-top: 25px;
+}

@@ -1,13 +1,54 @@
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <script src="jquery-3.4.1.js"></script>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<head>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  </body>
+  <meta charset="utf-8">
+  <title>Journal Is Life</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Journal Inside Me</h1>
+    <form id="input">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="enter your name here">
+      </div>
+      <div class="form-group">
+        <label for="journal-entry">Journal Entry</label>
+        <textarea class="form-control" id="journal-entry" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-info">Publish</button>
+    </form>
+    <div class="counter">
+      <div class="row">
+        <div class="col">
+          <h1>You got dis many words in your entry:</h1>
+          <h2 id="word-count"></h2>
+          <h1>You got dis many vowels:</h1>
+          <h2 id="vowels"></h2>
+          <h1>and dat many consonants:</h1>
+          <h2 id="consonants"></h2>
+        </div>
+        <div class="col">
+          <h4>Click on teaser text to see full entry.</h4>
+          <h2 id="first-eight"></h2><h5>Published by <span id="author"></span></h5>
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="full-entry">
+          <p id="users-entry"></p>
+          <img src="https://media2.giphy.com/media/wHxljsQQuuaTm/giphy.gif?cid=790b7611ddb095d823122cf6b4dfb21f3e53f0a4d7cf5174&rid=giphy.gif">
+    
+      </div>
+    </div>
+
+
+
+    </div>
+  </div>
+</body>
 </html>
